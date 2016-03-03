@@ -282,3 +282,78 @@ https://www.youtube.com/watch?v=wmcNC_JEN1w
 https://www.youtube.com/watch?v=xMVymQAH5j0     0:00 - 0:20
 https://www.youtube.com/watch?v=cgpi2hfnG-c
 
+
+
+candidate@382643advdev.com
+
+candidate@382643advdev.com.investsand
+
+
+
+
+
+<apex:panelGrid columns="4">
+           		<!--<apex:outputText value="< " />-->
+				<apex:commandLink action="{!fiirst}" rendered="{!hasPrevious}" reRender="InvAccRebalance">First</apex:commandlink>
+				<!--<apex:outputText rendered="{!hasPrevious}" value=" | " />-->
+				<apex:commandLink action="{!previous}" rendered="{!hasPrevious}" reRender="InvAccRebalance">Previous</apex:commandlink>
+				<!--<apex:outputText rendered="{!hasPrevious}" value=" | " />-->
+				<!--<apex:outputText rendered="{!!hasPrevious}" value=" First | " />-->
+				<!--<apex:outputText rendered="{!!hasPrevious}" value=" Previous | " />-->
+				<apex:commandLink action="{!next}" rendered="{!hasNext}" reRender="InvAccRebalance">Next</apex:commandlink>
+				<!--<apex:outputText rendered="{!hasNext}" value=" | " />-->
+				<apex:commandLink action="{!laast}" rendered="{!hasNext}" reRender="InvAccRebalance">Last</apex:commandlink>
+				<!--<apex:outputText rendered="{!hasNext}" value=" > " />-->
+				<!--<apex:outputText rendered="{!hasNext}" value=" | " />-->
+				<!--<apex:outputText rendered="{!!hasNext}"value=" Next | "  />-->
+				<!--<apex:outputText rendered="{!!hasNext}" value="Last >" />-->
+			</apex:panelGrid>
+			
+			
+Dont believe on destiny, believe in your determination
+Sometimes you can be lucky, not always
+Consistency in efforts is a must
+
+vifalta se koi nirasha nahin
+performance will very high if ur motivated
+
+clarity of goal, is more important that determination
+
+Har us vyakti aur cheezon ko apnayein jo aapko na pasand hain, sarehyaan naal bana ke rakho
+	In order to handle different situation you have to put on a different cap
+
+Focus on delivering the best based on your abilities rather than trying to becoming "great"
+
+
+
+<apex:pageBlockTable value="{!lstSetController }" var="obj" id="wrapperPageBlock" >
+      		<!-- <apex:column headerValue="Order">
+                <apex:outputText value="{!obj.cnt}"/>
+             </apex:column> -->
+             <apex:column headerValue="Active">
+                <apex:inputCheckbox value="{!obj.isSelected}">
+                	<apex:actionSupport event="onchange" rerender="wrapperAIP" />
+                </apex:inputCheckbox>
+             </apex:column> 
+             <apex:column headerValue="Auto Invest Percentage" id="wrapperAIP" > 
+                 <apex:inputField value="{!obj.inv.Auto_Invest_Percent__c}" render="{!obj.isSelected}"/>
+                 <apex:outputField value="{!obj.inv.Auto_Invest_Percent__c}" render="{!!obj.isSelected}"/>
+             </apex:column>
+             <apex:column headerValue="Investment Name"> 
+                 <apex:outputField value="{!obj.inv.Name}"/>
+             </apex:column>
+             <apex:column headerValue="Trading Symbol"> 
+                 <apex:outputField value="{!obj.inv.Trading_Symbol__c}"/>
+             </apex:column>
+             <apex:column headerValue="Value"> 
+                 <apex:outputField value="{!obj.inv.Value__c}"/>
+             </apex:column>
+             <apex:column headerValue="Shares"> 
+                 <apex:outputField value="{!obj.inv.Shares__c}"/>
+             </apex:column>
+             <!-- <apex:inlineEditSupport event="ondblClick"  showOnEdit="saveButton"/> --> 
+      </apex:pageBlockTable>
+
+
+
+			
